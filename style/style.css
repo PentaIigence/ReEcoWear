@@ -70,6 +70,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -92,6 +93,7 @@ body {
     border-radius: 2px;
     border-width: 2px;
     border-color: white;
+    margin-top: 50%;
     background-color: transparent;
     font-size: 25px;
     cursor: pointer;
