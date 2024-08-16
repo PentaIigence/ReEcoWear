@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -46,7 +47,7 @@ body {
 }
 
 .navbar a:hover {
-    color: green;
+    color: green; 
 }
 
 .sign-up-btn {
