@@ -94,7 +94,7 @@ body {
     border-radius: 2px;
     border-width: 2px;
     border-color: white;
-    margin-top: 50%;
+    margin-top: 25px;
     background-color: transparent;
     font-size: 25px;
     cursor: pointer;
@@ -112,4 +112,19 @@ body {
     opacity: 0.8;
 }
 
+.save-earth {
+    background-color: white;
+    padding-top: 20px;
+}
+
+.Save-heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.save-earth .logo_green {
+    color: green;
+    font-weight: 500;
+}
 
