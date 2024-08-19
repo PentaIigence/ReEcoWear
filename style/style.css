@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
 
-body {
+.landing {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../clothes.jpg') no-repeat;
     background-size: cover;
@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-    position: fixed;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -26,14 +26,14 @@ body {
     z-index: 100;
 }
 
-.Reeco_Logo {
+.Reeco_Logo { 
     font-size: 32px;
     color: white;
     text-decoration: none;
 }
 
 .Reeco_Logo .logo_green {
-    color: green;
+    color: rgba(67, 247, 31, 0.795);
     font-weight: 500;
 }
 
@@ -47,7 +47,7 @@ body {
 }
 
 .navbar a:hover {
-    color: green; 
+    color: rgba(67, 247, 31, 0.795);
 }
 
 .sign-up-btn {
@@ -63,8 +63,8 @@ body {
 }
 
 .sign-up-btn:hover {
-    border-color: green;
-    color: green;
+    border-color: rgba(67, 247, 31, 0.795);
+    color: rgba(67, 247, 31, 0.795);
 }
 
 .home-sec {
@@ -85,7 +85,13 @@ body {
 }
 
 .home-sec .greeting .logo_green {
-    color: green;
+    color: rgba(67, 247, 31, 0.795);
+}
+
+.welcome-btn .shop-now {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
 }
 
 .home-sec .welcome-btn {
@@ -108,11 +114,15 @@ body {
     border-color: rgba(67, 247, 31, 0.795);
 }
 
+.welcome-btn .shop-now:hover {
+    color: rgba(67, 247, 31, 0.795);
+}
+
 .home-sec .welcome-btn:active {
     opacity: 0.8;
 }
 
-.save-earth {
+.buy-section {
     background-color: white;
     padding-top: 20px;
 }
@@ -123,8 +133,109 @@ body {
     font-size: 50px;
 }
 
-.save-earth .logo_green {
-    color: green;
+.buy-section .logo_green {
+    color: rgba(5, 197, 14, 0.795);
     font-weight: 500;
 }
+
+.new-arrivals {
+    margin-top: 60px;
+    margin-right: 6%;
+    margin-left: 6%;
+    margin-bottom: 30px;
+}
+
+.arrival {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+.buy-section .item {
+    width: 315px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-width: 1px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+}
+
+.buy-section .item .item-pic {
+    margin-bottom: 10px;
+    width: 315px;
+    height: 315px;
+}
+
+.male {
+    width: 100%;
+    height: 100%;
+}
+
+.item-desc {
+    padding-left: 5px;
+}
+
+.item-name {
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.item-price {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+
+.btn-arrival {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-arrivals {
+    color: white;
+    background-color: rgba(15, 167, 15, 0.897);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+
+.view-arrivals:hover {
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(3, 252, 23, 0.5);
+}
+
+/**                                                     ABOUT US                                                             */
+
+.about {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/about-bg-2.jpg') no-repeat;
+    color: rgb(7, 7, 7);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
 
