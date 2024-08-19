@@ -88,6 +88,12 @@
     color: rgba(67, 247, 31, 0.795);
 }
 
+.welcome-btn .shop-now {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
 .home-sec .welcome-btn {
     color: white;
     border-style: solid; 
@@ -108,6 +114,10 @@
     border-color: rgba(67, 247, 31, 0.795);
 }
 
+.welcome-btn .shop-now:hover {
+    color: rgba(67, 247, 31, 0.795);
+}
+
 .home-sec .welcome-btn:active {
     opacity: 0.8;
 }
@@ -124,7 +134,7 @@
 }
 
 .buy-section .logo_green {
-    color: rgba(42, 253, 0, 0.795);
+    color: rgba(5, 197, 14, 0.795);
     font-weight: 500;
 }
 /* --------------------------------------------Buy Now Section-------------------------------------------------- */
@@ -152,9 +162,9 @@
 
 /* --------------------------------------------New Arrivals Section-------------------------------------------------- */
 .new-arrivals {
-    margin-top: 50px;
-    margin-right: 15px;
-    margin-left: 16px;
+    margin-top: 60px;
+    margin-right: 6%;
+    margin-left: 6%;
     margin-bottom: 30px;
 }
 
@@ -239,3 +249,16 @@
     color: black;
     box-shadow: 0 0 10px rgba(3, 252, 23, 0.5);
 }
+
+/**                                                     ABOUT US                                                             */
+
+.about {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/about-bg-2.jpg') no-repeat;
+    color: rgb(7, 7, 7);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
