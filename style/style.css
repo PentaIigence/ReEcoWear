@@ -125,6 +125,7 @@
 .buy-section {
     background-color: white;
     padding-top: 20px;
+    height: 100vh;
 }
 
 .Save-heading {
@@ -197,6 +198,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .view-arrivals {
@@ -230,12 +232,13 @@
 /**                                                     ABOUT US                                                             */
 
 .about {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/about-bg-2.jpg') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/about-bg.webp') no-repeat;
     color: rgb(7, 7, 7);
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
+
 
 
 
