@@ -162,6 +162,8 @@
 .clothesMen{
     margin: 20px;
     background-image: url(../Images/menSection.jpg);
+    background-size: cover; 
+    background-position: center;
     height: 350px;
     width: 400px;
 }
