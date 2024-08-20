@@ -143,7 +143,7 @@
     margin-right: 15px;
     margin-left: 15px;
     margin-bottom: 5px;
-    height: 400px;
+    height: 500px;
 }
 
 .shop{
@@ -155,7 +155,29 @@
 
 .choose{
  display: flex;
- flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+
+.clothesMen{
+    margin: 20px;
+    background-image: url(../Images/menSection.jpg);
+    height: 350px;
+    width: 400px;
+}
+
+.clothesWomen{
+    margin: 20px;
+    background-image: url(../Images/womanSection.jfif);
+    height: 350px;
+    width: 400px;
+}
+
+.clothesKids{
+    margin: 20px;
+    background-image: url(../Images/childSection.jpg);
+    height: 350px;
+    width: 400px;
 }
 
 
