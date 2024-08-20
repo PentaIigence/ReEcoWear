@@ -126,6 +126,7 @@
     background-color: white;
     padding-top: 20px;
     height: 100vh;
+    margin-bottom: 500px;
 }
 
 .Save-heading {
@@ -140,45 +141,62 @@
 }
 /* --------------------------------------------Buy Now Section-------------------------------------------------- */
 .clothingOptions{
-    margin-top: 50px;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 6%;
+    margin-left: 6%;
     margin-bottom: 5px;
-    height: 500px;
+    align-items: center;
 }
 
 .shop{
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 35px;
 }
 
 
-.choose{
- display: flex;
- justify-content: center;
- align-items: center;
+.clothesMen {
+    margin-right: 40px;
+    height: 350px;
+    width: 410px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/menSection.jpg');
+    background-size: cover;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.clothesMen{
-    margin: 20px;
-    background-image: url(../Images/menSection.jpg);
-    height: 350px;
-    width: 400px;
+.clothesMen:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
 }
 
-.clothesWomen{
-    margin: 20px;
-    background-image: url(../Images/womanSection.jfif);
+.clothesWomen {
+    margin-right: 40px;
     height: 350px;
-    width: 400px;
+    width: 410px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/womanSection.jfif');
+    background-size: cover;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.clothesKids{
-    margin: 20px;
-    background-image: url(../Images/childSection.jpg);
+.clothesWomen:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.clothesKids {
+    margin: 0px;
     height: 350px;
-    width: 400px;
+    width: 410px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/childSection.jpg');
+    background-size: cover;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.clothesKids:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
 }
 
 
@@ -282,6 +300,7 @@
     height: 100vh;
     background-size: cover;
     background-position: center;
+    margin-top: 200px;
 }
 
 
