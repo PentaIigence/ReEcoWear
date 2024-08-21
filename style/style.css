@@ -161,7 +161,9 @@
 }
 
 .clothesMen{
-    margin: 20px;
+    position: relative;
+    margin: 0px;
+    margin-right: 40px;
     background-image: url(../Images/menSection.jpg);
     background-size: cover; 
     background-position: center;
@@ -173,12 +175,30 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.menShoppingButton, .womenShoppingButton, .kidsShoppingButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.menShoppingButton:hover, .womenShoppingButton:hover, .kidsShoppingButton:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
 .clothesMen:hover {
     opacity: 0.9;
     transform: scale(1.02);
 }
 
 .clothesWomen {
+    position: relative;
     margin-right: 40px;
     height: 350px;
     width: 410px;
@@ -188,12 +208,23 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* .womenShoppingButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 300px;
+    height: 50px;
+} */
+
 .clothesWomen:hover {
     opacity: 0.9;
     transform: scale(1.02);
 }
 
 .clothesKids {
+    position: relative;
     margin: 0px;
     height: 350px;
     width: 410px;
@@ -203,6 +234,15 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* .kidsShoppingButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 300px;
+    height: 50px;
+} */
 .clothesKids:hover {
     opacity: 0.9;
     transform: scale(1.02);
@@ -297,6 +337,7 @@
     border-width: 2px;
     border-color: green;
     background-color: white;
+    cursor: pointer;
     color: black;
     box-shadow: 0 0 10px rgba(3, 252, 23, 0.5);
 }
