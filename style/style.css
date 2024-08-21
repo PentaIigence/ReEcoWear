@@ -161,13 +161,6 @@
     font-size: 35px;
 }
 
-
-.choose{
- display: flex;
- justify-content: center;
- align-items: center;
-}
-
 .clothesMen {
     margin-right: 40px;
     background-size: cover; 
