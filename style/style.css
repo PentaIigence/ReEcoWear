@@ -125,6 +125,8 @@
 .buy-section {
     background-color: white;
     padding-top: 20px;
+    height: 100vh;
+    margin-bottom: 500px;
 }
 
 .Save-heading {
@@ -137,7 +139,78 @@
     color: rgba(5, 197, 14, 0.795);
     font-weight: 500;
 }
+/* --------------------------------------------Buy Now Section-------------------------------------------------- */
+.clothingOptions{
+    margin-right: 6%;
+    margin-left: 6%;
+    margin-bottom: 5px;
+    align-items: center;
+}
 
+.shop{
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+
+.choose{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.clothesMen{
+    margin: 20px;
+    background-image: url(../Images/menSection.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 350px;
+    width: 410px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/menSection.jpg');
+    background-size: cover;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.clothesMen:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.clothesWomen {
+    margin-right: 40px;
+    height: 350px;
+    width: 410px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/womanSection.jfif');
+    background-size: cover;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.clothesWomen:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.clothesKids {
+    margin: 0px;
+    height: 350px;
+    width: 410px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/childSection.jpg');
+    background-size: cover;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.clothesKids:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+
+
+/* --------------------------------------------New Arrivals Section-------------------------------------------------- */
 .new-arrivals {
     margin-top: 60px;
     margin-right: 6%;
@@ -197,6 +270,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .view-arrivals {
@@ -230,12 +304,14 @@
 /**                                                     ABOUT US                                                             */
 
 .about {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/about-bg-2.jpg') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/about-bg.webp') no-repeat;
     color: rgb(7, 7, 7);
     height: 100vh;
     background-size: cover;
     background-position: center;
+    margin-top: 200px;
 }
+
 
 
 
