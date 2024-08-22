@@ -373,9 +373,10 @@
 }
 
 .events{
-    margin: 10%;
+    margin: 5%;
     width: fit-content
 }
+
 .eventsTopic{
     font-weight: bolder;
     position: relative;
@@ -384,6 +385,7 @@
     margin-bottom: 20px;
 
 }
+
 .comEvents{
     display: grid;
     grid-template-columns: 2.5fr 1.5fr;
@@ -394,9 +396,14 @@
 .comEventsText h3{
     color: lightgreen;
     font-weight: bolder;
-
-
+    font-size: xx-large;
 }
+
+.comEventsText p{
+    font-size: x-large;
+    font-weight:400;
+}
+
 .comEventsImage{
     height: 400px;
     width: 450px;
