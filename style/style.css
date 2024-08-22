@@ -342,21 +342,65 @@
 
 /**                                                     ABOUT US                                                             */
 
+.header2 {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
 .about {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/about-bg.webp') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/about-bg-3.jpg') no-repeat;
     color: rgb(248, 247, 247);
     height: 100vh;
     background-size: cover;
     background-position: center;
-    margin-top: 200px;
-    margin: 10%;
+    /* text-align: justify; */
 }
 
+.about h1{
+    margin-bottom: 50px;
+}
 .about-div {
     text-align: center;
     vertical-align: middle;
-    margin: 10%;
     padding: 10%;
+}
+
+.events{
+    margin: 10%;
+    width: fit-content
+}
+.eventsTopic{
+    font-weight: bolder;
+    position: relative;
+    font-size: larger;
+    text-size-adjust: 72px;
+    margin-bottom: 20px;
+
+}
+.comEvents{
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    gap: 10px;
+
+}
+
+.comEventsText h3{
+    color: lightgreen;
+    font-weight: bolder;
+
+
+}
+.comEventsImage{
+    height: 400px;
+    width: 450px;
+
 }
 
 
