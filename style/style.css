@@ -398,13 +398,13 @@
     color: lightgreen;
     font-weight: bolder;
     font-size: xx-large;
+    margin-bottom: 20px;
+    margin-right: 10%;
 }
 
 .comEventsText p{
-    font-size: large;
-    font-weight: 100;
-    text-align: left;
-    word-spacing: 5%;
+    font-weight:400;
+    margin-right: 10%;
 }
 
 .comEventsImage{
