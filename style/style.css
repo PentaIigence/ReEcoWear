@@ -397,11 +397,13 @@
     color: lightgreen;
     font-weight: bolder;
     font-size: xx-large;
+    margin-bottom: 20px;
+    margin-right: 10%;
 }
 
 .comEventsText p{
-    font-size: x-large;
     font-weight:400;
+    margin-right: 10%;
 }
 
 .comEventsImage{
