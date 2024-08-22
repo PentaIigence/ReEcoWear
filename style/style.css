@@ -370,6 +370,7 @@
     text-align: center;
     vertical-align: middle;
     padding: 10%;
+    color: white;
 }
 
 .events{
@@ -380,7 +381,7 @@
 .eventsTopic{
     font-weight: bolder;
     position: relative;
-    font-size: larger;
+    font-size: medium;
     text-size-adjust: 72px;
     margin-bottom: 20px;
 
