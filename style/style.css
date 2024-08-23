@@ -154,15 +154,8 @@
 }
 
 
-.choose{
- display: flex;
- justify-content: center;
- align-items: center;
-}
-
 .clothesMen{
-    margin: 20px;
-    background-image: url(../Images/menSection.jpg);
+    margin-right: 40px;
     background-size: cover; 
     background-position: center;
     height: 350px;
