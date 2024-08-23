@@ -9,8 +9,8 @@ body{
     box-sizing: border-box;
 }
 .footer{
-    background-color: #0A6000;
-    padding: 70px 0;
+    background-color: #10a000;
+    padding: 10px 0;
 }
 .container{
     max-width: 1170px;
@@ -42,9 +42,8 @@ ul{
     background-color: rgb(22, 21, 21);
     height: 2px;
     box-sizing: border-box;
-    width: auto;
+    width: 15%;
 }
 .footer-col ul:not(:last-child){
     margin-bottom: 10px;
-
 }
