@@ -410,11 +410,13 @@
 }
 
 .comEventsText p {
+.comEventsText p {
     font-weight:400;
     margin-right: 10%;
 }
 
 .comImage {
+.comEventsImage {
     height: 400px;
     width: 450px;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../Images/save-earth.jpg');
