@@ -37,6 +37,11 @@
     font-weight: 500;
 }
 
+.intro .logo_green {
+    color: rgb(49, 238, 11);
+    font-weight: 500;
+}
+
 .navbar a {
     color: white;
     text-decoration: none;
@@ -366,9 +371,10 @@
     /* text-align: justify; */
 }
 
-.about h1{
+.about h1 {
     margin-bottom: 10px;
 }
+
 .about-div {
     text-align: center;
     vertical-align: middle;
@@ -376,7 +382,7 @@
     color: white;
 }
 
-.events{
+.events {
     margin: 5%;
     width: fit-content
 }
@@ -387,7 +393,7 @@
     margin-bottom: 20px;
 }
 
-.comEvents{
+.comEvents {
     margin-left: 5%;
     margin-right: 5%;
     display: grid;
@@ -398,7 +404,7 @@
 .comEventsText {
     border-style: solid;
     border-color: white;
-    border-width: 10px;
+    border-width: 2px;
 }
 
 .comEventsText h3 {
@@ -423,7 +429,7 @@
     background-size: cover;
 }
 
-.comEventsImage{
+.comEventsImage {
     height: 100%;
     width: 100%;
 }
