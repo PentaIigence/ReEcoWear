@@ -410,12 +410,10 @@
 }
 
 .comEventsText p {
-.comEventsText p {
     font-weight:400;
     margin-right: 10%;
 }
 
-.comImage {
 .comEventsImage {
     height: 400px;
     width: 450px;
