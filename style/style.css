@@ -61,6 +61,7 @@
     text-decoration: none;
     font-size: 18px;
     cursor: pointer;
+    background: transparent;
 }
 
 .sign-up-btn:hover {
@@ -366,7 +367,7 @@
 }
 
 .about h1{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .about-div {
     text-align: center;
@@ -380,42 +381,59 @@
     width: fit-content
 }
 
-.eventsTopic{
+.eventsTopic {
     font-weight: bolder;
-    position: relative;
-    font-size: medium;
-    text-size-adjust: 72px;
+    font-size: 25px;
     margin-bottom: 20px;
-
 }
 
 .comEvents{
+    margin-left: 5%;
+    margin-right: 5%;
     display: grid;
-    grid-template-columns: 2.5fr 1.5fr;
-    gap: 10px;
-
+    grid-template-columns: 1.9fr 1.5fr;
+    column-gap: 10px;
 }
 
-.comEventsText h3{
-    color: lightgreen;
+.comEventsText {
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+}
+
+.comEventsText h3 {
+    color: green;
     font-weight: bolder;
     font-size: xx-large;
     margin-bottom: 20px;
     margin-right: 10%;
 }
 
-.comEventsText p{
+.comEventsText p {
     font-weight:400;
     margin-right: 10%;
 }
 
-.comEventsImage{
+.comImage {
     height: 400px;
     width: 450px;
-
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../Images/save-earth.jpg');
+    object-fit: cover;
+    object-position: center;
+    background-size: cover;
 }
 
-.para-1 {
+.comEventsImage{
+    height: 100%;
+    width: 100%;
+}
+
+.comEventsImage .para-1 {
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
+.p-text {
+    line-height: 17px;
+    width: 100%;
+}
