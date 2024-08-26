@@ -5,31 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reecowear Store</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login/login.css">
 </head>
 
 <body>
-    <div class="form-div">
+
+    <section class="user">
+        <div class="form-div">
+            
+            <h1>Login</h1>
+
+            <form class="login-form">
+                <p><strong>Email:</p>
+                <input type="email" id="email" minlength="5" required>
+
+
+                <p>Password</p>
+                <input type="password" name="Password" minlength="8" required>
+            </form>
+
+            <br>
+
         
-        <h1>Login</h1>
-
-        <form class="login-form">
-            <p><strong>Email:</p>
-            <input type="email" id="email" minlength="5" required>
-
-
-            <p>Password</p>
-               <input type="password" name="Password" minlength="8" required>
-        </form>
-
-        <br>
-
-       
-          <button>Login</button>
+            <button class="log">Login</button>
+            
+            <p> Don't have an account? </p><a href="signup.html">Create one</a>
         
-        <p> Don't have an account? </p><a href="signup.html">Create one</a>
-    
-    </div>
+        </div>
+    </section>
+        
        
 </body>
 </html>

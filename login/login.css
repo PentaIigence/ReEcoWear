@@ -1,0 +1,43 @@
+
+.user {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    height: 100vh;
+    color: white;
+    background:linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)), url("../about-bg-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-form{
+    text-align:center;
+}
+
+    h1 {
+        
+        text-align: center;
+        font-size: 50px;
+    }
+.log{
+    justify-content: start;
+}
+
+a{
+    color: yellow;
+}
+
+button:hover {
+   background-color: blueviolet;
+    
+}
+
+button:active {
+    background-color: darkgrey;
+    font-weight: bold;
+
+}
+
