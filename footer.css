@@ -16,6 +16,7 @@ body{
 .container{
     max-width: 1500px;
     margin: auto;
+    margin-bottom: 50px;
 }
 .row{
     display: flex;
@@ -54,4 +55,22 @@ ul{
     text-align: center;
     color: black;
     font-size: 20px;
+    
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-areas: 
+    "empty socialLinks";
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr;
+    grid-gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 8%;
+}
+
+.socialLinks{
+    grid-area: socialLinks;
+   
 }
