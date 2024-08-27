@@ -10,13 +10,13 @@ body{
     box-sizing: border-box;
 }
 .footer{
-    background-color: #10a000;
-    padding: 10px;
+    background-color: #005007b6;
+    padding: 5px;
 }
 .container{
-    max-width: 1700px;
+    max-width: 2000px;
     margin: auto;
-    margin-bottom: 90px;
+    margin-bottom: 10px;
 }
 .row{
     display: flex;
@@ -32,22 +32,22 @@ ul{
 }
 .footer-col h4{
     font-size: 30px;
-    color: black;
+    color: white;
     text-transform: capitalize;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     position: relative;
 }
-.footer-col h4::before{
+.footer-col h4::after{
     content: '';
     position: absolute;
     left: 0;
     bottom: 0px;
-    background-color: rgb(22, 21, 21);
+    background-color: rgb(247, 244, 244);
     height: 2px;
     box-sizing: border-box;
     width: 0%;
 }
-.footer-col ul:not(:last-child){
+.footer-col ul::after{
     margin-bottom: 10px;
 }
 
@@ -58,13 +58,14 @@ text-decoration: none;
 .head{
     line-height: 5;
     text-align: center;
-    color: black;
-    font-size: 32px;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
     
 }
 
 .contacts-grid {
-    display: grid;
+    /* display: grid;
     grid-template-areas: 
     "empty socialLinks";
     grid-template-rows: 1fr;
@@ -72,7 +73,10 @@ text-decoration: none;
     grid-gap: 50px;
     text-decoration: none;
     color: inherit;
-    margin-right: 0%;
+    margin-right: 0%; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 .socialLinks{
@@ -86,30 +90,51 @@ text-decoration: none;
 }
 
 .image-container{
-    width: 300px;
-    height: 300px;
+
     display: flex;
+    align-items: last baseline;
     justify-content: right;
+    
 
 }
+
 .image-container img{
-    width: 100%;
+    width: 100px;
     height: 30%;
 }
+
 .image-container img{
     border-radius: 50%;
     border: 10px;
 }
 
-.list-Decor{
-
-}
-
 .list-Decor li a {
     text-decoration: none;
-    font-size: large;
+    font-size: larger;
+    color:white;
+}
+
+
+.footer-row {
+    display: flex;
+    align-items: last baseline;
+    text-decoration: none;
+
+    
+}
+.footer-row li{
+    list-style: none;
+    margin-right: 1rem;
 }
 .footer-row li a{
     text-decoration: none;
     font-size: large;
+}
+.image-container i{
+    font-size: 2rem;
+}
+
+.social-box{
+    display: flex;
+    align-items: center;
 }
