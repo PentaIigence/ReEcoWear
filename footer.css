@@ -118,6 +118,12 @@ text-decoration: none;
 }
 .list-Decor p{
     color: white;
+    font-size: large;
+}
+
+.list-Decor p a{
+    color: white;
+    font-size: large;
 }
 
 
@@ -134,7 +140,7 @@ text-decoration: none;
 }
 .footer-row li a{
     text-decoration: none;
-    font-size: large;
+    font-size: 15px;
 }
 .footer-row a{
     color: white;
