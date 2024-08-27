@@ -61,7 +61,10 @@ text-decoration: none;
     color: white;
     font-size: 35px;
     text-decoration: none;
-    
+}
+.head a{
+    text-decoration: none;
+    color: white;
 }
 
 .contacts-grid {
@@ -113,6 +116,9 @@ text-decoration: none;
     font-size: larger;
     color:white;
 }
+.list-Decor p{
+    color: white;
+}
 
 
 .footer-row {
@@ -130,6 +136,9 @@ text-decoration: none;
     text-decoration: none;
     font-size: large;
 }
+.footer-row a{
+    color: white;
+}
 .image-container i{
     font-size: 2rem;
 }
@@ -137,4 +146,8 @@ text-decoration: none;
 .social-box{
     display: flex;
     align-items: center;
+}
+.social-box a{
+    color: white;
+    margin-right: 10px;
 }
