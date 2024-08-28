@@ -55,16 +55,34 @@ ul{
 text-decoration: none;
 }
 
+.head3r{
+    display: flex;
+    justify-content: center;
+    
+}
 .head{
+    display: flex;
+    justify-content: center;
     line-height: 2;
     text-align: center;
-    color: white;
-    font-size: 35px;
+    font-size: 25px;
     text-decoration: none;
+    height: 80px;
+    width: 800px;
+    position: relative;
+    border-bottom: px solid rgb(0, 136, 247);
+    background: black;
+    border-radius: 20px;
+    padding: 1px;
 }
 .head a{
     text-decoration: none;
-    color: white;
+    color: rgb(2, 182, 26);
+
+}
+.head:hover{
+    padding: 0px;
+    border: blue;
 }
 
 .contacts-grid {
@@ -140,7 +158,7 @@ text-decoration: none;
 }
 .footer-row li a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
 }
 .footer-row a{
     color: white;
@@ -154,6 +172,6 @@ text-decoration: none;
     align-items: center;
 }
 .social-box a{
-    color: white;
-    margin-right: 10px;
+    color:  wheat;
+    margin-right: 15px;
 }
