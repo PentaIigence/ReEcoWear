@@ -40,3 +40,13 @@ a{
     border-color: white;
     text-decoration: none;
 }
+
+a:hover{
+    color: black;
+    font-size: 1.2em;
+    background-color: lawngreen;
+}
+
+
+
+
