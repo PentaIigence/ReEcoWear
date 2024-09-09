@@ -7,10 +7,11 @@
     font-size: 30px;
     height: 100vh;
     color: white;
-    background:linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url("../about-bg-4.jpg");
+    background:linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)), url("../about-bg-4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+   
 }
 
 .emailtxt{
