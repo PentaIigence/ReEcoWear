@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .user {
     display: flex;
@@ -7,49 +11,58 @@
     font-size: 30px;
     height: 100vh;
     color: white;
-    background:linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)), url("../about-bg-4.jpg");
+    background:linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)), url("../about-bg-4.jpg") no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-   
+}
+
+.h1-text {
+    margin-bottom: 30px;
 }
 
 .emailtxt{
     padding: 10px;
     width: 350px;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .pwdtext{
     padding: 10px;
     width: 350px;
+    margin-top: 15px;
 }
 
 .login-form{
     text-align:center;
 }
 
-    h1 {
-        
-        text-align: center;
-        font-size: 70px;
-    }
-.log{
-    justify-content: start;
+h1 {
+    text-align: center;
+    font-size: 70px;
 }
 
-a{
+a {
     color: yellow;
     font-size: 15px;
 }
 
+.log-pos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    left: 0;
+    align-items: center;
+}
+
 .log {
-    margin-right: 100;
     margin-top: 0px;
-    justify-content: right;
+    justify-content: start;
     text-align: right;
     align-items: right;
-    
-    padding: 2px;
+    padding: 10px 20px 10px 20px;
     color: white;
     background: black;
     border-style: solid;
@@ -58,10 +71,22 @@ a{
     text-decoration: none;
 }
 
-a:hover{
-    color: black;
-    font-size: 1.2em;
-    background-color: lawngreen;
+.log:hover {
+    color: white;
+    transform: scale(1.1);
+    background-color: rgb(4, 104, 4);
+}
+
+.acc {
+    font-size: 19px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    right: 0;
+}
+
+.acc:hover {
+    color: rgb(0, 255, 13);
 }
 
 .Password{
