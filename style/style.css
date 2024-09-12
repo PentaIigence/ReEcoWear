@@ -132,8 +132,8 @@
 .buy-section {
     background-color: white;
     padding-top: 20px;
-    height: 100vh;
-    margin-bottom: 500px;
+    height: fit-content;
+    margin-bottom: 100px;
 }
 
 .Save-heading {
