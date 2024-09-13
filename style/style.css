@@ -134,6 +134,7 @@
     padding-top: 20px;
     height: fit-content;
     margin-bottom: 100px;
+    position: relative;
 }
 
 .Save-heading {
