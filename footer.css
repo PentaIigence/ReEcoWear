@@ -26,10 +26,12 @@ body{
 ul{
     list-style: none;
 }
+
 .footer-col{
     width: 20%;
     padding: 2 25px;
 }
+
 .footer-col h4{
     font-size: 30px;
     color: white;
@@ -145,7 +147,6 @@ text-decoration: none;
     color: white;
     font-size: large;
 }
-
 
 .footer-row {
     display: flex;
