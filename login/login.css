@@ -85,8 +85,9 @@ a {
     right: 0;
 }
 
-.acc:hover {
-    color: rgb(0, 255, 13);
+.signup:hover {
+    background-color: lawngreen;
+    color:black;
 }
 
 .Password{
@@ -95,6 +96,11 @@ a {
     align-items: center;
     font-size: 20px;
     text-decoration: underline;
+}
+
+.Password:hover {
+    background-color: lawngreen;
+    color:black;
 }
 
 
