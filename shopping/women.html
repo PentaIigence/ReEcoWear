@@ -29,17 +29,18 @@
 
         <section class="men-products">
             <h1 class="men-heading"><span class="green-heading"> Womens </span> Clothing </h1>
-        
+    
             <div class="men-shop">
                 
                 <div class="m-item">
                     <div class="m-pic">
                         <img class="m-preview" src="../Images/model-3.jpg">
                     </div>
-        
+    
                     <div class="desc">
                         <p class="clothing-item">Green Cotton Shirt</p>
                         <p class="men-price">R500</p>
+                        <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
                 
@@ -50,9 +51,10 @@
                     <div class="desc">
                         <p class="clothing-item">Warcore Black Hemp Shorts</p>
                         <p class="men-price">R500</p>
+                        <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
-        
+    
                 <div class="m-item">
                     <div class="m-pic">
                         <img class="m-preview" src="../Images/model-5.webp">
@@ -60,9 +62,10 @@
                     <div class="desc">
                         <p class="clothing-item">Black Warcore Hemp Jacket</p>
                         <p class="men-price">R1000</p>
+                        <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
-        
+    
                 <div class="m-item">
                     <div class="m-pic">
                         <img class="m-preview" src="../Images/shoe-1.jfif">
@@ -70,75 +73,100 @@
                     <div class="desc">
                         <p class="clothing-item">Green Urban Bamboo Shoes</p>
                         <p class="men-price">R800</p>
+                        <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
-        
+    
                 <div class="m-item">
                     <div class="m-pic">
-                        <img class="m-preview" src="../Images/model-5.webp">
+                        <img class="m-preview" src="../Images/capMan.webp">
                     </div>
                     <div class="desc">
                         <p class="clothing-item">Black Warcore Hemp Jacket</p>
                         <p class="men-price">R1000</p>
+                        <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
-        
+    
             </div>
-        
+    
             <div class="men-shop">
                 
                 <div class="m-item">
                     <div class="m-pic">
-                        <img class="m-preview" src="../Images/model-3.jpg">
+                        <img class="m-preview" src="../Images/ecoShirt.webp">
                     </div>
-        
+    
                     <div class="desc">
                         <p class="clothing-item">Green Cotton Shirt</p>
                         <p class="men-price">R500</p>
+                        <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
-        
+    
                 <div class="m-item">
                     <div class="m-pic">
-                        <img class="m-preview" src="../Images/model-6.jfif">
+                        <img class="m-preview" src="../Images/wool-jacket.jpg">
                     </div>
                     <div class="desc">
-                        <p class="clothing-item"></p>
+                        <p class="clothing-item">Hello</p>
                         <p class="men-price">R500</p>
+                        <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
-        
+    
                 <div class="m-item">
                     <div class="m-pic">
-                        <img class="m-preview" src="../Images/model-5.webp">
+                        <img class="m-preview" src="../Images/ecoPants.jpg">
                     </div>
                     <div class="desc">
                         <p class="clothing-item">Black Warcore Hemp Jacket</p>
                         <p style="color: rgb(42, 42, 42); margin-top: 5px;">R1000</p>
+                        <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
-        
+    
                 <div class="m-item">
                     <div class="m-pic">
-                        <img class="m-preview" src="../Images/shoe-1.jfif">
+                        <img class="m-preview" src="../Images/shoes-light.webp">
                     </div>
                     <div class="desc">
                         <p class="clothing-item">Green Urban Bamboo Shoes</p>
                         <p style="color: rgb(42, 42, 42);">R800</p>
+                        <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
-        
+    
                 <div class="m-item">
                     <div class="m-pic">
-                        <img class="m-preview" src="../Images/model-5.webp">
+                        <img class="m-preview" src="../Images/organic-t.jpg">
                     </div>
                     <div class="desc">
                         <p class="clothing-item">Black Warcore Hemp Jacket</p>
                         <p style="color: rgb(42, 42, 42); margin-top: 5px;">R1000</p>
+                        <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
-        
+    
             </div>
+    
+          </section>
+    
+          <div id="popupMessage">Added to Cart</div>
+    
+          <script>
+            
+            function addToCart() {
+                const popup = document.getElementById("popupMessage");
+                popup.classList.add("show");
+    
+                // popup hides after 3 seconds
+                setTimeout(function (addToCart) {
+                    popup.classList.remove("show");
+                }, 3000);
+            }
+          </script>
+
     </body>
 </html>
 
