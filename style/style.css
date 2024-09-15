@@ -29,6 +29,11 @@
     border-bottom-color: rgb(170, 170, 170);
 }
 
+.about-div .heading {
+    text-align: center;
+    display: inline-block;
+}
+
 .Reeco_Logo { 
     font-size: 32px;
     color: white;
@@ -385,6 +390,7 @@
     justify-content: space-between;
     z-index: 100;
 }
+
 .about {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/about-bg-3.jpg') no-repeat;
     color: rgb(248, 247, 247);
@@ -396,6 +402,7 @@
 
 .about h1 {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .about-div {
@@ -472,8 +479,8 @@
 }
 
 .p-text {
-    line-height: 17px;
     width: 100%;
+    line-height: 17px;
 }
 
 /** MIssion and Vision*/
