@@ -25,9 +25,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom-style: solid; 
+    /* border-bottom-style: solid; 
     border-bottom-width: 0.5px; 
-    border-bottom-color: rgb(170, 170, 170);
+    border-bottom-color: rgb(170, 170, 170); */
 }
 
 .Reeco_Logo { 
