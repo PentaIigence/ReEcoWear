@@ -7,9 +7,12 @@
     <title>ReEcoWear Store</title>
 
     <link rel="stylesheet" href="../style/men.css">
+    <link rel="stylesheet" href="../footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/876339442c.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -28,7 +31,7 @@
 
         </nav>
 
-        <button class="sign-up-btn"> Sign In </button>
+        <a class="sign-up-btn" href="../signup.html">Sign In</a>
 
       </header>
 
@@ -44,7 +47,8 @@
 
                 <div class="desc">
                     <p class="clothing-item">Green Cotton Shirt</p>
-                    <p class="men-price">R500</p>
+                    <p class="men-price">R260</p>
+                    <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
             
@@ -54,7 +58,8 @@
                 </div>
                 <div class="desc">
                     <p class="clothing-item">Warcore Black Hemp Shorts</p>
-                    <p class="men-price">R500</p>
+                    <p class="men-price">R400</p>
+                    <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
 
@@ -65,6 +70,7 @@
                 <div class="desc">
                     <p class="clothing-item">Black Warcore Hemp Jacket</p>
                     <p class="men-price">R1000</p>
+                    <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
 
@@ -75,16 +81,18 @@
                 <div class="desc">
                     <p class="clothing-item">Green Urban Bamboo Shoes</p>
                     <p class="men-price">R800</p>
+                    <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
 
             <div class="m-item">
                 <div class="m-pic">
-                    <img class="m-preview" src="../Images/model-5.webp">
+                    <img class="m-preview" src="../Images/capMan.webp">
                 </div>
                 <div class="desc">
-                    <p class="clothing-item">Black Warcore Hemp Jacket</p>
-                    <p class="men-price">R1000</p>
+                    <p class="clothing-item">Light Brown Polyester Cap</p>
+                    <p class="men-price">R130</p>
+                    <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
 
@@ -94,58 +102,186 @@
             
             <div class="m-item">
                 <div class="m-pic">
-                    <img class="m-preview" src="../Images/model-3.jpg">
+                    <img class="m-preview" src="../Images/ecoShirt.webp">
                 </div>
 
                 <div class="desc">
-                    <p class="clothing-item">Green Cotton Shirt</p>
-                    <p class="men-price">R500</p>
+                    <p class="clothing-item">Organic Sandy Brown Shirt</p>
+                    <p class="men-price">R270</p>
+                    <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
 
             <div class="m-item">
                 <div class="m-pic">
-                    <img class="m-preview" src="../Images/model-6.jfif">
+                    <img class="m-preview" src="../Images/wool-jacket.jpg">
                 </div>
                 <div class="desc">
-                    <p class="clothing-item">Hello</p>
-                    <p class="men-price">R500</p>
+                    <p class="clothing-item">Gray Wool Jacket</p>
+                    <p class="men-price">R350</p>
+                    <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
 
             <div class="m-item">
                 <div class="m-pic">
-                    <img class="m-preview" src="../Images/model-5.webp">
+                    <img class="m-preview" src="../Images/ecoPants.jpg">
                 </div>
                 <div class="desc">
-                    <p class="clothing-item">Black Warcore Hemp Jacket</p>
-                    <p style="color: rgb(42, 42, 42); margin-top: 5px;">R1000</p>
+                    <p class="clothing-item">Pale Brown Bamboo Pants</p>
+                    <p style="color: rgb(42, 42, 42); margin-top: 5px;">R300</p>
+                    <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
 
             <div class="m-item">
                 <div class="m-pic">
-                    <img class="m-preview" src="../Images/shoe-1.jfif">
+                    <img class="m-preview" src="../Images/shoes-light.webp">
                 </div>
                 <div class="desc">
-                    <p class="clothing-item">Green Urban Bamboo Shoes</p>
-                    <p style="color: rgb(42, 42, 42);">R800</p>
+                    <p class="clothing-item">Cork Fibre Brown Shoes</p>
+                    <p style="color: rgb(42, 42, 42);">R1600</p>
+                    <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
 
             <div class="m-item">
                 <div class="m-pic">
-                    <img class="m-preview" src="../Images/model-5.webp">
+                    <img class="m-preview" src="../Images/organic-t.jpg">
                 </div>
                 <div class="desc">
-                    <p class="clothing-item">Black Warcore Hemp Jacket</p>
-                    <p style="color: rgb(42, 42, 42); margin-top: 5px;">R1000</p>
+                    <p class="clothing-item">Black Soy Silk T-Shirt</p>
+                    <p style="color: rgb(42, 42, 42); margin-top: 5px;">R180</p>
+                    <button class="cartButton" id="cartButton" onclick="addToCart()">Add to Cart</button>
                 </div>
             </div>
 
         </div>
 
       </section>
+
+      <section class="footer">
+        <footer class="footer">
+          <div class="head3r">
+              <div class="head-div">
+                <a href="login.html"><h2>Log In/Sign Up To ReEcoWear:</h2></a>
+              </div>
+          </div>
+          
+            <div class="container">
+              <div class="row">
+                <div class="footer-col">
+                  <h4>Get To Know Us</h4>
+                  <ul class="list-Decor">
+                    <li>
+                      <a href="http://127.0.0.1:5501/about.html"
+                        >About ReEcoWear</a>
+                    </li>
+                    <li><a href="#">Save Earth</a></li>
+                    <li><a href="about.html">Community Events</a></li>
+                    <li><a href="#">Mission</a></li>
+                  </ul>
+                </div>
+    
+                <div class="footer-col">
+                  <h4>ReEcoWear</h4>
+                  <ul class="list-Decor">
+                    <li><a href="#">Shopping</a></li>
+                    <li><a href="#buy-section">New Arrivals</a></li>
+                    <li><a href="shopping/accessories.html">Accessories</a></li>
+                  </ul>
+                </div>
+    
+                <div class="footer-col">
+                  <h4>Refund & Return</h4>
+                  <ul class="list-Decor">
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Menu</h4>
+                  <ul class="list-Decor">
+                    <li><a href="shopping/men.html">Men</a></li>
+                    <li><a href="shopping/women.html">Women</a></li>
+                    <li><a href="shopping/kids.html">Kids</a></li>
+                    <li><a href="shopping/accessories.html">Accessories</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Contact Us</h4>
+                  <ul class="list-Decor">
+                    <li>
+                      <p>Tel: <a href="tel:+27123456789">+27 123 456 789</a></p>
+                    </li>
+                    <li>
+                      <p>
+                        Email:
+                        <a href="mailto:ReEcoWear@gmail.com"
+                          >ReEcoWear@gmail.com</a
+                        >
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a href="//maps.google.com/?q=97 Durham Avenue, Salt River, Capetown, 7925">
+                          97 Durham Avenue Salt River Capetown 7925</a>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-grid">
+              <div class="socialLinks">
+                <div class="image-container">
+                  <div class="social-box">
+                    <a href="https://www.facebook.com"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.twitter.com"
+                      ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                    <a href="https://www.instagram.com"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                    <a href="https://www.whatsapp.com"
+                      ><i class="fa-brands fa-whatsapp"></i
+                    ></a>
+                    <a href="https://www.linkedin.com"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                    <a href="../index.html">
+                      <img src="../images/R.jpg"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-row">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Delivery Policy</a></li>
+              </div>
+            </div>
+        </footer>
+      </section>
+
+      <div id="popupMessage">Added to Cart</div>
+
+      <script>
+        
+        function addToCart() {
+            const popup = document.getElementById("popupMessage");
+            popup.classList.add("show");
+
+            // popup hides after 3 seconds
+            setTimeout(function (addToCart) {
+                popup.classList.remove("show");
+            }, 3000);
+        }
+      </script>
 
 </body>
 </html>
