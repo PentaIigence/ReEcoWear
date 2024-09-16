@@ -146,11 +146,14 @@
 }
 
 .Save-heading {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 50px;
     font-size: 60px;
 }
-.about .heading{
+
+.about .heading {
     font-size: 60px;
     color: white;
 }
@@ -163,20 +166,38 @@
 .buy-section .dkg_eco {
     color: green;
 }
+
 /* --------------------------------------------Buy Now Section-------------------------------------------------- */
-.clothingOptions {
+.buy-section {
     display: flex;
-    margin-right: 0; /* Reset margin-right */
-    margin-left: 0;  /* Reset margin-left */
-    margin-bottom: 5px;
+    flex-direction: column;
     align-items: center;
-    overflow: hidden; /* Ensure no horizontal scrolling */
+    justify-content: center;
+    text-align: center;
 }
 
-.shop{
+.save-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.clothingOptions {
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;  
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.shop {
     margin-bottom: 20px;
     margin-top: 50px;
     font-size: 35px;
+    text-align: center;
 }
 
 .clothesMen, .clothesWomen, .clothesKids {
@@ -189,6 +210,7 @@
     background-position: center;
     display: inline-block; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center text */
 }
 
 .clothesMen {
@@ -204,6 +226,7 @@
 }
 
 
+
 .menShoppingButton, .womenShoppingButton, .kidsShoppingButton {
     position: relative;
     text-decoration: none;
@@ -215,6 +238,7 @@
     height: 50px;
     font-size: x-large;
     font-weight: bold;
+    text-align: center;
 }
 
 .menShoppingButton:hover, .womenShoppingButton:hover, .kidsShoppingButton:hover {
@@ -226,6 +250,32 @@
     opacity: 0.9;
     transform: scale(1.02);
 }
+
+.new-arrivals {
+    text-align: center; /* Center text */
+}
+
+.item, .item-last {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.item-pic img {
+    max-width: 100%; /* Ensure images do not overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.btn-arrival {
+    text-align: center; /* Center text */
+}
+
+.view-arrivals {
+    display: inline-block; /* Make button inline */
+    text-align: center; /* Center text */
+}
+
 
 
 
