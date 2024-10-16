@@ -14,7 +14,7 @@
 }
 
 .header {
-    position:absolute;
+    position:sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -209,23 +209,12 @@ svg:hover {
     font-weight: 500;
 }
 
-.buy-section .dkg_eco {
-    color: green;
-}
-
 /* --------------------------------------------Buy Now Section-------------------------------------------------- */
 .buy-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-}
-
-.save-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
@@ -270,7 +259,6 @@ svg:hover {
 .clothesKids {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/childSection.jpg') no-repeat center center / cover;
 }
-
 
 
 .menShoppingButton, .womenShoppingButton, .kidsShoppingButton {
