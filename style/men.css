@@ -69,6 +69,43 @@
     margin-bottom: 0px;
 }
 
+.cartTab {
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    width: 350px;
+    background-color: rgb(185, 185, 185);
+    top: 80px;
+    position: fixed;
+    color: #000000;
+    inset: 78px 0 0 auto;
+}
+
+.cartTab .headCart {
+    padding: 20px;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.cartTab .btn button{
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.close {
+    background-color: black;
+    padding: 5px 10px 5px 10px;
+    width: 100px;
+    color: white;
+}
+
+.checkout {
+    background-color: yellow;
+    padding: 5px 10px 5px 10px;
+    color: black;
+}
+
 .men-shop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
