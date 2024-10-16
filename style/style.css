@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-}
+} 
 
 .landing {
     min-height: 100vh;
@@ -14,16 +14,24 @@
 }
 
 .header {
-    position:absolute;
+    position:sticky;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 100px 10px;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 100;
+    border-bottom-style: solid; 
+    border-bottom-width: 0.5px; 
+    border-bottom-color: rgb(170, 170, 170);
+}
+
+.about-div .heading {
+    text-align: center;
+    display: inline-block;
 }
 
 .Reeco_Logo { 
@@ -59,7 +67,7 @@
 .sign-up-btn {
     color: white;
     font-weight: bold;
-    padding: 7px;
+    padding: 7px 10px;
     border-style: solid;
     border-width: 1px;
     border-color: white;
@@ -132,16 +140,20 @@
 .buy-section {
     background-color: white;
     padding-top: 20px;
-    height: 100vh;
-    margin-bottom: 500px;
+    height: fit-content;
+    margin-bottom: 100px;
+    position: relative;
 }
 
 .Save-heading {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 50px;
     font-size: 60px;
 }
-.about .heading{
+
+.about .heading {
     font-size: 60px;
     color: white;
 }
@@ -151,34 +163,57 @@
     font-weight: 500;
 }
 
-.buy-section .dkg_eco {
-    color: green;
-}
 /* --------------------------------------------Buy Now Section-------------------------------------------------- */
-.clothingOptions{
-    margin-right: 6%;
-    margin-left: 6%;
-    margin-bottom: 5px;
+.buy-section {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.shop{
+.clothingOptions {
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;  
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.shop {
     margin-bottom: 20px;
     margin-top: 50px;
     font-size: 35px;
+    text-align: center;
+}
+
+.clothesMen, .clothesWomen, .clothesKids {
+    margin: 1%;
+    padding: 0;
+    height: 550px;
+    width: 550px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: inline-block; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center text */
 }
 
 .clothesMen {
-    margin-right: 40px;
-    background-size: cover; 
-    background-position: center;
-    height: 350px;
-    width: 410px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/menSection.jpg');
-    background-size: cover;
-    display: inline-block;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/menSection.jpg') no-repeat center center / cover;
 }
+
+.clothesWomen {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/womanSection.jfif') no-repeat center center / cover;
+}
+
+.clothesKids {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/childSection.jpg') no-repeat center center / cover;
+}
+
 
 .menShoppingButton, .womenShoppingButton, .kidsShoppingButton {
     position: relative;
@@ -191,112 +226,112 @@
     height: 50px;
     font-size: x-large;
     font-weight: bold;
+    text-align: center;
 }
 
-.menShoppingButton:hover, .womenShoppingButton:hover, .kidsShoppingButton:hover{
+.menShoppingButton:hover, .womenShoppingButton:hover, .kidsShoppingButton:hover {
     background-color: lightgreen;
     cursor: pointer;
 }
 
-.clothesMen:hover {
+.clothesMen:hover, .clothesWomen:hover, .clothesKids:hover {
     opacity: 0.9;
     transform: scale(1.02);
 }
 
-.clothesWomen {
-    position: relative;
-    margin-right: 40px;
-    height: 350px;
-    width: 410px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/womanSection.jfif');
-    background-size: cover;
-    display: inline-block;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.new-arrivals {
+    text-align: center; /* Center text */
 }
 
-/* .womenShoppingButton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    width: 300px;
-    height: 50px;
-} */
-
-.clothesWomen:hover {
-    opacity: 0.9;
-    transform: scale(1.02);
+.item, .item-last {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
 }
 
-.clothesKids {
-    position: relative;
-    margin: 0px;
-    height: 350px;
-    width: 410px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/childSection.jpg');
-    background-size: cover;
-    display: inline-block;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.item-pic img {
+    max-width: 100%; /* Ensure images do not overflow */
+    height: auto; /* Maintain aspect ratio */
 }
 
-/* .kidsShoppingButton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    width: 300px;
-    height: 50px;
-} */
-.clothesKids:hover {
-    opacity: 0.9;
-    transform: scale(1.02);
+.btn-arrival {
+    text-align: center; /* Center text */
 }
+
+.view-arrivals {
+    display: inline-block; /* Make button inline */
+    text-align: center; /* Center text */
+}
+
+
 
 
 
 /* --------------------------------------------New Arrivals Section-------------------------------------------------- */
 .new-arrivals {
-    margin-top: 60px;
-    margin-right: 6%;
-    margin-left: 6%;
-    margin-bottom: 30px;
+    margin: 60px 3% 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .arrival {
     margin-bottom: 20px;
     margin-top: 40px;
     font-size: 35px;
+    width: 100%;
 }
 
-.buy-section .item {
-    width: 315px;
+.buy-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buy-section .item,
+.buy-section .item-last {
+    width: calc(25% - 15px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: none;
     border-width: 1px;
-    display: inline-block;
-    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: white;
+    min-height: 400px; /* Set a minimum height for items */
 }
 
-.item:hover {
+.item:hover,
+.item-last:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: scale(1.02);
 }
 
-.buy-section .item .item-pic {
-    margin-bottom: 10px;
-    width: 315px;
-    height: 315px;
+.buy-section .item .item-pic,
+.buy-section .item-last .item-pic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
 }
 
-.male {
+.buy-section .item img,
+.buy-section .item-last img {
     width: 100%;
     height: 100%;
+    object-fit: cover; /* Ensure images cover the container without distortion */
 }
 
 .item-desc {
-    padding-left: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 .item-name {
@@ -323,10 +358,7 @@
     color: white;
     background-color: rgba(15, 167, 15, 0.897);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 35px;
     font-size: 16px;
     margin-top: 40px;
     text-align: center;
@@ -348,6 +380,8 @@
     box-shadow: 0 0 10px rgba(3, 252, 23, 0.5);
 }
 
+
+
 /**                                                     ABOUT US                                                             */
 
 .header2 {
@@ -362,6 +396,7 @@
     justify-content: space-between;
     z-index: 100;
 }
+
 .about {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/about-bg-3.jpg') no-repeat;
     color: rgb(248, 247, 247);
@@ -373,6 +408,7 @@
 
 .about h1 {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .about-div {
@@ -382,8 +418,16 @@
     color: white;
 }
 
+.intro {
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+/**Events section*/
 .events {
-    margin: 5%;
+    margin: 3%;
+    margin-bottom: 150px;
+    margin-top: 100px;
     width: fit-content
 }
 
@@ -441,8 +485,40 @@
 }
 
 .p-text {
-    line-height: 17px;
     width: 100%;
+    line-height: 17px;
+}
+
+/** MIssion and Vision*/
+.divider {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    margin-top: 3%;
+}
+
+.sectionMandV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+}
+
+.headingMandV {
+    color: green;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.storyMandV {
+    width: 80%;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
 }
 
 
