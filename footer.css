@@ -20,6 +20,21 @@
     list-style: none;
 }
 
+.list-Decor li a {
+    text-decoration: none;
+    font-size: larger;
+    color:rgb(215, 234, 171);
+}
+.list-Decor p{
+    color: rgb(215, 234, 171);
+    font-size: large;
+}
+
+.list-Decor p a{
+    color: rgb(215, 234, 171);
+    font-size: large;
+}
+
 .footer-col{
     width: 20%;
     padding: 2 25px;
@@ -42,6 +57,7 @@
     box-sizing: border-box;
     width: 0%;
 }
+
 .footer-col ul::after{
     margin-bottom: 10px;
 }
@@ -50,11 +66,31 @@
 text-decoration: none;
 }
 
+.footer-row {
+    display: flex;
+    align-items: last baseline;
+    text-decoration: none;  
+}
+
+.footer-row li{
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.footer-row li a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-row a{
+    color: rgb(215, 234, 171);
+}
+
 .head3r{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;  
 }
+
 .head-div{
     display: flex;
     position: relative;
@@ -72,11 +108,12 @@ text-decoration: none;
     padding: 1px;
     border: 2px solid transparent;   
 }
+
 .head-div a{
     text-decoration: none;
     color: rgb(2, 182, 26);
-
 }
+
 .head-div:hover{
     padding: 0px;
     border: blue;
@@ -100,6 +137,7 @@ text-decoration: none;
 .socialLinks{
     grid-area: socialLinks; 
 }
+
 *img{
     margin-bottom: 0px;
     padding: 0px;
@@ -122,37 +160,6 @@ text-decoration: none;
     border: 10px;
 }
 
-.list-Decor li a {
-    text-decoration: none;
-    font-size: larger;
-    color:rgb(215, 234, 171);
-}
-.list-Decor p{
-    color: rgb(215, 234, 171);
-    font-size: large;
-}
-
-.list-Decor p a{
-    color: rgb(215, 234, 171);
-    font-size: large;
-}
-
-.footer-row {
-    display: flex;
-    align-items: last baseline;
-    text-decoration: none;  
-}
-.footer-row li{
-    list-style: none;
-    margin-right: 1rem;
-}
-.footer-row li a{
-    text-decoration: none;
-    font-size: 14px;
-}
-.footer-row a{
-    color: rgb(215, 234, 171);
-}
 .image-container i{
     font-size: 2rem;
 }
@@ -161,6 +168,7 @@ text-decoration: none;
     display: flex;
     align-items: center;
 }
+
 .social-box a{
     color:  rgb(215, 234, 171);
     margin-right: 15px;
