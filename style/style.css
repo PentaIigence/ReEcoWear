@@ -11,6 +11,8 @@
     background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../clothes.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    background-size: cover;
+    transition: background-image 1s ease-in-out; /* Smooth transition between images */
 }
 
 .header {

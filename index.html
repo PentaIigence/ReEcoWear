@@ -38,6 +38,7 @@
 
     <section class="landing" id="landing">
       <div class="home-sec">
+     
         <div>
           <h1 class="greeting">
             Welcome to <span class="logo_green">ReEco</span>Wear
@@ -238,14 +239,36 @@
       </footer>
     </section>
 
-    <!-- <script type="text/javascript">
-      let image = document.GetElementById('image');
-      let images = ["image1.webp","image2.jpg","image3.jfif","image4.webp","image5.jpg"];
-      setInterval(function() {
-        let rnd = Math.floor(Math.random()*images.length);
-        image.src = image[rnd];
-      },800);
 
-    </script> -->
+    <script>
+      // Array of image paths
+      const images = [
+        'clothes.jpg',
+        'images/image11.webp',
+        'images/image2.jpg',
+        'images/image4.webp',
+        'images/image5.jpg'
+      ];
+    
+      let currentIndex = 0;
+      const landingElement = document.getElementById('landing');
+    
+      // Function to change the background image
+      function changeBackground() {
+        // Update the background image
+        landingElement.style.backgroundImage = `url(${images[currentIndex]})`;
+        
+        // Move to the next image, and loop back to the first if at the end
+        currentIndex = (currentIndex + 1) % images.length;
+      }
+    
+      // Change image every 5 seconds (5000 milliseconds)
+      setInterval(changeBackground, 5000);
+    
+      // Initialize with the first image
+      changeBackground();
+    </script>
+
+    </script>
   </body>
 </html>
