@@ -17,25 +17,74 @@
 </head>
 
 <body>
-    <header class="header">
+        <header class="header">
 
-        <a href="../index.html" class="Reeco_Logo"><span class="logo_green">ReEco</span>Wear</a>
+          <a href="../index.html" class="Reeco_Logo"><span class="logo_green">ReEco</span>Wear</a>
+  
+          <nav class="navbar">
+  
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="kids.html">Kids</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="../about.html">About Us</a>
+  
+          </nav>
+          
+            <div class="icon-cart">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+              </svg>
+              <span class="cart-counter">0</span>
+            </div>
+          
+            <div class="sign">
+              <a class="sign-up-btn" href="login.html"> Sign In </a>
+            </div>
+        </header>
 
-        <nav class="navbar">
+        <div class="cartTab">
+          <h1 class="headCart" style="color: black;">Shopping Cart</h1>
+          <div class="listCart">
 
-          <a href="men.html">Men</a>
-          <a href="women.html">Women</a>
-          <a href="kids.html">Kids</a>
-          <a href="accessories.html">Accessories</a>
-          <a href="../about.html">About Us</a>
+          </div>
+          <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkout">CHECK OUT</button>
+          </div>
+        </div>
 
-        </nav>
+      </div>
 
-        <a class="sign-up-btn" href="../login.html">Sign In</a>
+      <script src="https://www.paypal.com/sdk/js?client-id=BAAkyg2fRzGeOqoDvcNTaXPnJtvfsJLQicpppK5yAk7Nw0SeAllFOo8xoGf7vJfR0baG0orR6jHPFQxhCI&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+      <div id="paypal-container-G443Z8PLE5PWS"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "G443Z8PLE5PWS",
+        }).render("#paypal-container-G443Z8PLE5PWS")
+      </script>
 
-      </header>
 
-      <section class="men-products">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <section class="men-products">
         <h1 class="men-heading"><span class="green-heading"> Mens </span> Clothing </h1>
 
         <div class="men-shop">
@@ -163,7 +212,7 @@
           <div class="listCart">
             <div class="item">
               <div class="image">
-                <img src="image/i.png" alt="">
+                <img src="../Images/bagDude.jpg" alt="man with a bag pack">
               </div>
               <div class="name">
                 NAME
@@ -172,7 +221,9 @@
                 R500
               </div>
               <div class="quantity">
-
+                <span class="minus"> < </span>
+                <span> 1 </span>
+                <span class="plus"> > </span>
               </div>
             </div>
           </div>
@@ -306,6 +357,15 @@
             }, 3000);
         }
       </script>
+
+      <script src="https://www.paypal.com/sdk/js?client-id=BAAkyg2fRzGeOqoDvcNTaXPnJtvfsJLQicpppK5yAk7Nw0SeAllFOo8xoGf7vJfR0baG0orR6jHPFQxhCI&components=hosted-buttons&disable-funding=venmo&currency=ZAR"></script>
+
+      <div id="paypal-container-G443Z8PLE5PWS"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "G443Z8PLE5PWS",
+        }).render("#paypal-container-G443Z8PLE5PWS")
+      </script> -->
 
 </body>
 </html>
