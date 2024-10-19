@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Green Cotton Shirt",
+        "price": "259.99",
+        "image": "../Images/model-3.jpg"
+    },
+
+    {
+        "id": 2,
+        "name": "Warcore Black Hemp Shorts",
+        "price": "399.99",
+        "image": "../Images/model-6.jfif"
+    },
+
+    {
+        "id": 3,
+        "name": "Black Warcore Hemp Jacket",
+        "price": "999.99",
+        "image": "../Images/model-5.webp"
+    },
+
+    {
+        "id": 4,
+        "name": "Green Urban Bamboo Shoes",
+        "price": "799.99",
+        "image": "../Images/shoe-1.jfif"
+    },
+
+    {
+        "id": 5,
+        "name": "Light Brown Polyester Cap",
+        "price": "129.99",
+        "image": "../Images/capMan.webp"
+    }
+
+]
