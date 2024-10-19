@@ -17,7 +17,7 @@
         "id": 3,
         "name": "Black Warcore Hemp Jacket",
         "price": "999.99",
-        "image": "../Images/model-5.webp"
+        "image": "../Images/model-5-copy.jpg"
     },
 
     {
@@ -32,6 +32,41 @@
         "name": "Light Brown Polyester Cap",
         "price": "129.99",
         "image": "../Images/capMan.webp"
+    },
+
+    {
+        "id": 6,
+        "name": "Organic Sandy Brown Shirt",
+        "price": "269.99",
+        "image": "../Images/ecoShirt.webp"
+    },
+
+    {
+        "id": 7,
+        "name": "Gray Wool Jacket",
+        "price": "349.99",
+        "image": "../Images/wool-jacket.jpg"
+    },
+
+    {
+        "id": 8,
+        "name": "Pale Brown Bamboo Pants",
+        "price": "299.99",
+        "image": "../Images/ecoPants.jpg"
+    },
+
+    {
+        "id": 9,
+        "name": "Cork Fibre Brown Shoes",
+        "price": "1599.99",
+        "image": "../Images/shoes-light.webp"
+    },
+
+    {
+        "id": 10,
+        "name": "Black Soy Silk T-Shirt",
+        "price": "179.99",
+        "image": "../Images/organic-t.jpg"
     }
 
 ]
