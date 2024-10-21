@@ -249,11 +249,13 @@ svg:hover {
 
 .clothingOptions {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 0;
     margin-left: 0;  
     margin-bottom: 5px;
-    align-items: center;
-    justify-content: center;
+    
+    
     overflow: hidden;
 }
 
