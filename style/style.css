@@ -336,9 +336,11 @@ svg:hover {
     text-align: center; /* Center text */
 }
 
-.view-arrivals {
+.view-arrivals a {
+    text-decoration: none;
     display: inline-block; /* Make button inline */
     text-align: center; /* Center text */
+    background: transparent;
 }
 
 
@@ -348,9 +350,12 @@ svg:hover {
 /* --------------------------------------------New Arrivals Section-------------------------------------------------- */
 .new-arrivals {
     margin: 60px 3% 30px;
+    padding: 20px;
     display: flex;
+    justify-content: space-evenly;
+    
     flex-wrap: wrap;
-    justify-content: space-between;
+    
 }
 
 .arrival {
