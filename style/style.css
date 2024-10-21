@@ -16,12 +16,12 @@
 }
 
 .header {
-    position:sticky;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px 10px;
-    background: transparent;
+    background-color: rgba(128, 128, 128, 0.8);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,6 +29,11 @@
     border-bottom-style: solid; 
     border-bottom-width: 0.5px; 
     border-bottom-color: rgb(170, 170, 170);
+    transition: background-color 0.3s;
+}
+
+.scrolled .header {
+    background-color: rgba(128, 128, 128, 0.5); /* Color when scrolled */
 }
 
 .about-div .heading {
@@ -51,6 +56,11 @@
     color: rgb(49, 238, 11);
     font-weight: 500;
 }
+/* 
+.navbar{
+    background-color: transparent; /* initial color 
+    transition: background-color 0.3s;
+} */
 
 .navbar a {
     color: white;
@@ -60,7 +70,13 @@
     margin-left: 40px;
     cursor: pointer;
     font-weight: bold;
+    background-color: transparent; /* initial color */
+    transition: background-color 0.3s;
 }
+
+/* .scrolled .navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* color when scrolled 
+}  */
 
 .navbar a:hover {
     color: rgba(67, 247, 31, 0.795);
