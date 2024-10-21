@@ -33,7 +33,7 @@
 }
 
 .scrolled .header {
-    background-color: rgba(128, 128, 128, 0.5); /* Color when scrolled */
+    background-color: rgba(128, 128, 128, 0.2); /* Color when scrolled */
 }
 
 .about-div .heading {
@@ -56,11 +56,6 @@
     color: rgb(49, 238, 11);
     font-weight: 500;
 }
-/* 
-.navbar{
-    background-color: transparent; /* initial color 
-    transition: background-color 0.3s;
-} */
 
 .navbar a {
     color: white;
@@ -74,9 +69,6 @@
     transition: background-color 0.3s;
 }
 
-/* .scrolled .navbar {
-    background-color: rgba(0, 0, 0, 0.8); /* color when scrolled 
-}  */
 
 .navbar a:hover {
     color: rgba(67, 247, 31, 0.795);
