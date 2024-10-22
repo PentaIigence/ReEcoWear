@@ -95,7 +95,7 @@
 
         <div class="item-desc">
           <p class="item-name">Bamboo Visco Green Jacket</p>
-          <p class="item-price">R600</p>
+          <p class="item-price">R599.99</p>
         </div>
       </div>
 
@@ -106,7 +106,7 @@
 
         <div class="item-desc">
           <p class="item-name">Green Hemp Shoes</p>
-          <p class="item-price">R800</p>
+          <p class="item-price">R799.99</p>
         </div>
       </div>
 
@@ -117,7 +117,7 @@
 
         <div class="item-desc">
           <p class="item-name">Kids Kariban Pants</p>
-          <p class="item-price">R300</p>
+          <p class="item-price">R299.99</p>
         </div>
       </div>
 
@@ -128,13 +128,13 @@
 
         <div class="item-desc">
           <p class="item-name">Organic Cotton Gray Pants</p>
-          <p class="item-price">R400</p>
+          <p class="item-price">R399.99</p>
         </div>
       </div>
 
       <div class="btn-arrival">
-        <button class="view-arrivals">View More</button>
-      </div>
+        <button class="view-arrivals" onclick="location.href='shopping/newArrival.html';">View More</button>
+     </div>
     </div>
 
   </section>
@@ -245,9 +245,9 @@
       // Array of image paths
       const images = [
         'clothes.jpg',
-        'images/image11.webp',
+        'images/hanged.jpg',
         'images/image2.jpg',
-        'images/image4.webp',
+        'images/bead2024.jpeg',
         'images/image5.jpg'
       ];
     
@@ -273,6 +273,16 @@
 
       window.onload = function() {
   document.querySelector('.greeting').classList.add('bouncing-text');
+
+
+  window.addEventListener('scroll', function() {
+        const header = document.querySelector('.header');
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
 };
 
 
