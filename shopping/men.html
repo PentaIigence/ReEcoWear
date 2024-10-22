@@ -183,7 +183,7 @@
           </div>
           <div class="btn">
             <button class="close"> CLOSE </button>
-            <button class="checkout"> CHECK OUT </button>
+            <button class="checkout"><a href="../checkout.html"> CHECK OUT </a></button>
           </div>
 
       </section>
@@ -300,6 +300,18 @@
 
       <script src="../the_js/app.js"></script>
 
+      <!-- <script src="https://www.paypal.com/sdk/js?client-id=BAAkyg2fRzGeOqoDvcNTaXPnJtvfsJLQicpppK5yAk7Nw0SeAllFOo8xoGf7vJfR0baG0orR6jHPFQxhCI&components=hosted-buttons&disable-funding=venmo&currency=ZAR"></script> -->
+
+      <div id="paypal-container-G443Z8PLE5PWS"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "G443Z8PLE5PWS",
+        }).render("#paypal-container-G443Z8PLE5PWS")
+      </script>
+
+</body>
+</html>
+
       <!-- <script>
         
         function addToCart() {
@@ -312,15 +324,3 @@
             }, 3000);
         }
       </script> -->
-
-      <!-- <script src="https://www.paypal.com/sdk/js?client-id=BAAkyg2fRzGeOqoDvcNTaXPnJtvfsJLQicpppK5yAk7Nw0SeAllFOo8xoGf7vJfR0baG0orR6jHPFQxhCI&components=hosted-buttons&disable-funding=venmo&currency=ZAR"></script>
-
-      <div id="paypal-container-G443Z8PLE5PWS"></div>
-      <script>
-        paypal.HostedButtons({
-          hostedButtonId: "G443Z8PLE5PWS",
-        }).render("#paypal-container-G443Z8PLE5PWS")
-      </script> -->
-
-</body>
-</html>
