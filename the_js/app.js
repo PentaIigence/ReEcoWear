@@ -1,23 +1,26 @@
 let iconCart = document.querySelector('.icon-cart');
 let closeCart = document.querySelector('.close');
-let body = document.querySelector('.men-products');
+let body = document.querySelector('.men-products') || document.querySelector('.women-products'); // Generic for both men and women
 let listCartHTML = document.querySelector('.listCart');
 let iconCartSpan = document.querySelector('.icon-cart span');
 
-listProductHTML = document.querySelector('.men-shop');
+// This is already present, I'll make it generic for both men and women
+let listProductHTML = document.querySelector('.men-shop') || document.querySelector('.women-shop'); 
 
 let listProducts = [];
 let carts = [];
+let currentPage = ''; // Track current page (men or women)
 
+// Cart toggle functionality
 iconCart.addEventListener('click', () => {
-    body.classList.toggle('men-products');
-})
+    body.classList.toggle(`${currentPage}-products`); // Toggles the display of cart based on current page
+});
 
 closeCart.addEventListener('click', () => {
-  body.classList.toggle('men-products')
-})
+    body.classList.toggle(`${currentPage}-products`); // Closes the cart display
+});
 
-
+// Function to add product data to HTML
 const addDataToHTML = () => {
   listProductHTML.innerHTML = '';
   if (listProducts.length > 0) {
@@ -32,14 +35,15 @@ const addDataToHTML = () => {
 
         <div class="desc">
           <p class="clothing-item">${product.name}</p>
-          <p class="men-price">${product.price}</p>
+          <p class="${currentPage}-price">${product.price}</p>
           <button class="cartButton">Add to Cart</button>
         </div>`;
         listProductHTML.appendChild(newProduct);
     });
   }
-}
+};
 
+// Add click event listener for "Add to Cart"
 listProductHTML.addEventListener('click', (event) => {
   let positionClick = event.target;
   if (positionClick.classList.contains('cartButton')) {
@@ -54,10 +58,11 @@ listProductHTML.addEventListener('click', (event) => {
   }
 });
 
-  const cartButton = (product_id) => {
-    let positionThisProductInCart = carts.findIndex((value) => value.product_id == product_id);
-    if (carts.length <= 0) {
-      carts = [{
+// Function to handle adding product to cart
+const cartButton = (product_id) => {
+  let positionThisProductInCart = carts.findIndex((value) => value.product_id == product_id);
+  if (carts.length <= 0) {
+    carts = [{
       product_id: product_id,
       quantity: 1
     }]
@@ -75,10 +80,12 @@ listProductHTML.addEventListener('click', (event) => {
   addCartToMemory();
 }
 
+// Save cart to localStorage
 const addCartToMemory = () => {
-  localStorage.setItem('cart', JSON.stringify(carts));
+  localStorage.setItem(`${currentPage}_cart`, JSON.stringify(carts)); // Store based on men/women page
 }
 
+// Display the cart in HTML
 const addCartToHTML = () => {
   listCartHTML.innerHTML = '';
   let totalQuantity = 0;
@@ -90,7 +97,6 @@ const addCartToHTML = () => {
       // Find the product in listProducts based on product_id
       let positionProduct = listProducts.findIndex((value) => value.id == parseInt(cart.product_id));
 
-      
       if (positionProduct >= 0) {  // Ensure the product exists
         let info = listProducts[positionProduct];
 
@@ -126,67 +132,75 @@ const addCartToHTML = () => {
   
   iconCartSpan.innerText = totalQuantity;
 }
+
+// Update product quantity in the cart
 listCartHTML.addEventListener('click', (event) => {
   let positionClick = event.target;
   
-  // Check if the clicked element is either a "minus" or "plus" button
   if (positionClick.classList.contains('minus') || positionClick.classList.contains('plus')) {
-    // Get the product ID from the closest parent element with class 'item'
     let product_id = positionClick.closest('.item').dataset.id;
     
-    // Determine if the clicked button is 'plus' or 'minus'
     let type = positionClick.classList.contains('plus') ? 'plus' : 'minus';
     
-    // Call the function to adjust quantity
     changeQuantity(product_id, type);
   }
 });
 
+// Adjust the cart quantity (increase/decrease)
 const changeQuantity = (product_id, type) => {
-  // Find the product in the cart by its ID
   let positionItemInCart = carts.findIndex((value) => value.product_id == product_id);
   
-  // If product is found in the cart
   if (positionItemInCart >= 0) {
     switch (type) {
       case 'plus':
-        // Increase the quantity by 1
         carts[positionItemInCart].quantity += 1;
         break;
         
       case 'minus':
-        // Decrease the quantity, but do not allow it to go below 1
         let newQuantity = carts[positionItemInCart].quantity - 1;
         
         if (newQuantity > 0) {
           carts[positionItemInCart].quantity = newQuantity;
         } else {
-          // Remove item from the cart if quantity reaches 0
           carts.splice(positionItemInCart, 1);
         }
         break;
     }
   }
   
-  // Update the cart in localStorage and refresh the cart display
   addCartToMemory();
   addCartToHTML();
 }
 
-
+// Initialize the app and load product data based on page
 const initApp = () => {
-  fetch('../men-product.json')
-  .then(response => response.json())
-  .then(data => {
-    listProducts = data;
-    addDataToHTML();
+  if (window.location.pathname.includes('men.html')) {
+    currentPage = 'men'; // For men products
+    fetch('../men-product.json')
+      .then(response => response.json())
+      .then(data => {
+        listProducts = data;
+        addDataToHTML();
 
-    // getting cart from memory
-    if (localStorage.getItem('cart')) {
-      carts = JSON.parse(localStorage.getItem('cart'));
-      addCartToHTML();
-    }
-  })
+        if (localStorage.getItem('men_cart')) {
+          carts = JSON.parse(localStorage.getItem('men_cart'));
+          addCartToHTML();
+        }
+      });
+  } else if (window.location.pathname.includes('women.html')) {
+    currentPage = 'women'; // For women products
+    fetch('../women-product.json')
+      .then(response => response.json())
+      .then(data => {
+        listProducts = data;
+        addDataToHTML();
+
+        if (localStorage.getItem('women_cart')) {
+          carts = JSON.parse(localStorage.getItem('women_cart'));
+          addCartToHTML();
+        }
+      });
+  }
 }
 
 initApp();

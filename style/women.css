@@ -94,14 +94,14 @@ header .icon-cart .cart-counter {
     right: -30%;
 }
 
-.women-products {
+.men-products {
     color: black;
     margin-top: 120px;
     height: 160vh;
     margin-bottom: 0px;
 }
 
-.women-shop {
+.men-shop {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
@@ -123,7 +123,7 @@ header .icon-cart .cart-counter {
     color: green;
 }
 
-.w-item {
+.m-item {
     color: black;
     width: 230px;
     border: none;
@@ -132,16 +132,16 @@ header .icon-cart .cart-counter {
     align-items: center;
 }
 
-.w-item:hover {
+.m-item:hover {
     transform: scale(1.02);
 }
 
-.w-pic {
+.m-pic {
     width: 100%;
     height: 300px;
 }
 
-.w-preview {
+.m-preview {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -159,7 +159,7 @@ header .icon-cart .cart-counter {
     font-weight: bold;
 }
 
-.women-price {
+.men-price {
     color: rgb(42, 42, 42);
     margin-top: 5px;
 }
@@ -191,11 +191,11 @@ header .icon-cart .cart-counter {
     transition: .5s;
 }
 
-.women-products .cartTab {
+.men-products .cartTab {
     inset: 78px 0 0 auto;
 }
 
-.women-products .women-shop {
+.men-products .men-shop {
     transform: translateX(-250px);
 }
 
