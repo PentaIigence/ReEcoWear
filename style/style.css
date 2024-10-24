@@ -254,8 +254,6 @@ svg:hover {
     margin-right: 0;
     margin-left: 0;  
     margin-bottom: 5px;
-    
-    
     overflow: hidden;
 }
 
@@ -269,8 +267,8 @@ svg:hover {
 .clothesMen, .clothesWomen, .clothesKids {
     margin: 1%;
     padding: 0;
-    height: 550px;
-    width: 550px;
+    height: 400px;
+    width: 400px;
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center;

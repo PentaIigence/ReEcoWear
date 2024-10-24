@@ -35,7 +35,7 @@ const addDataToHTML = () => {
 
         <div class="desc">
           <p class="clothing-item">${product.name}</p>
-          <p class="${currentPage}-price">${product.price}</p>
+          <p class="${currentPage}-price">R${product.price}</p>
           <button class="cartButton">Add to Cart</button>
         </div>`;
         listProductHTML.appendChild(newProduct);
@@ -132,6 +132,57 @@ const addCartToHTML = () => {
   
   iconCartSpan.innerText = totalQuantity;
 }
+
+function displayWomenProducts() {
+  fetch('../women-product.json')
+    .then(response => response.json())
+    .then(data => {
+      const productsContainer = document.querySelector('.women-shop');
+      productsContainer.innerHTML = '';
+
+      data.forEach(product => {
+        const productItem = `
+          <div class="m-item" data-id="${product.id}">
+            <div class="m-pic">
+              <img class="m-preview" src="${product.image}" alt="${product.name}">
+            </div>
+            <div class="desc">
+              <p class="clothing-item">${product.name}</p>
+              <p class="women-price">R${product.price}</p>
+              <button class="cartButton">Add to Cart</button>
+            </div>
+          </div>
+        `;
+        productsContainer.innerHTML += productItem;
+      });
+      reapplyCartListeners(); // Apply event listeners after products are loaded
+    })
+    .catch(error => console.error('Error loading women products:', error));
+}
+
+const reapplyCartListeners = () => {
+  const cartButton = (product_id) => {
+    let positionThisProductInCart = carts.findIndex((value) => value.product_id == product_id);
+    
+    if (positionThisProductInCart < 0) {
+      // Product is not in cart, so add it
+      carts.push({
+        product_id: product_id,
+        quantity: 1
+      });
+    } else {
+      // Product is already in the cart, so increase the quantity
+      carts[positionThisProductInCart].quantity += 1;
+    }
+  }
+  
+  addCartToHTML();
+  addCartToMemory();
+}
+
+
+document.addEventListener('DOMContentLoaded', displayWomenProducts);
+
 
 // Update product quantity in the cart
 listCartHTML.addEventListener('click', (event) => {
