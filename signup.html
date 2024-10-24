@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reecowear Store</title>
     <link rel="stylesheet" href="style/signup.css">
+    <script type="module" src="firebaseauth.js"></script>
 </head>
 <body>
     <section class="user">
@@ -13,14 +14,14 @@
         </header>
         
         <div class="form-div">
-
+        <div id="SignUpMessage" class="messageDiv" style="display:none;"></div>
             <h1>Sign Up</h1>
             <table>
                 <tr class="inputs">
                     <td>Name & Surname</td>
                     <td>
                         <form><label></label>
-                            <input type="Name & Surname" 
+                            <input type="Name & Surname" id="nas"
                             name="Name & Surname" required>
                         </form>
                     </td>    
@@ -30,7 +31,7 @@
                     <td>Email</td>
                     <td>
                         <form><label></label>
-                            <input type="email" 
+                            <input type="email" id="email"
                             name="email" required>
                         </form>
                     </td>    
@@ -40,8 +41,8 @@
                     <td>Confirm Email</td>
                     <td>
                         <form><label></label>
-                            <input type="email" 
-                                name="email" required>
+                            <input type="email" id="" 
+                                name="conemail" required>
                         </form>
                     </td>    
                 </tr>
@@ -50,7 +51,7 @@
                 <td>Password</td>
                 <td>
                         <form><label></label>
-                            <input type="Password" 
+                            <input type="Password" id="password"
                                 name="password"
                                 minlength="8" required>
                         </form>
@@ -61,8 +62,8 @@
                     <td>Confirm Password</td>
                     <td>
                         <form><label></label>
-                            <input type="password" 
-                                name="password" 
+                            <input type="password" id="conpassword"
+                                name="conpassword" 
                                 minlength="8" required>
                         </form>
                     </td>    
@@ -71,7 +72,8 @@
 
             <br>
             
-            <a class="create" href="index.html">Create Account</a>
+            <div class="create">
+            <button type="button" id= "signUp" onclick="alert('Signed Up!')">Create Account</button>
         </div>
     </section>   
 </body>
