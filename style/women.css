@@ -94,14 +94,14 @@ header .icon-cart .cart-counter {
     right: -30%;
 }
 
-.men-products {
+.women-products {
     color: black;
     margin-top: 120px;
     height: 160vh;
     margin-bottom: 0px;
 }
 
-.men-shop {
+.women-shop {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
@@ -111,7 +111,7 @@ header .icon-cart .cart-counter {
     transition: transform .5s;
 }
 
-.men-heading {
+.women-heading {
     color: black;
     font-size: 40px;
     margin-top: 120px;
@@ -119,7 +119,7 @@ header .icon-cart .cart-counter {
     text-align: center;
 }
 
-.men-heading .green-heading {
+.women-heading .green-heading {
     color: green;
 }
 
@@ -187,9 +187,9 @@ header .icon-cart .cart-counter {
     position: fixed;
     inset: 78px -400px 0 auto;
     display: grid;
+    z-index: 10;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s;
-    z-index: 10;
 }
 
 .men-products .cartTab {
@@ -268,53 +268,6 @@ header .icon-cart .cart-counter {
     width: 0;
 }
 
-.checkout-container {
-    display: flex;
-    position: absolute;
-    top: 120px;
-    left: 40px;
-    border-color: gray;
-    border-style: solid;
-    border-width: 1px;
-    padding: 20px;
-    border-radius: 2px;
-}
-
-.heading-check {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 22px;
-    width: 100%;
-}
-
-.text-price {
-    display: block;
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.btn-check {
-    display: block;
-    width: 100%;
-}
-
-.btn-check .checkout-btn {
-    padding: 10px;
-    font-size: 17px;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: opacity 0.15s;
-}
-
-.btn-check .checkout-btn:active {
-    opacity: 0.8;
-    transform: scale(1.05);
-}
-
 
 #popupMessage {
     visibility: hidden;
@@ -339,19 +292,19 @@ header .icon-cart .cart-counter {
 }
 
 @media screen and (max-width: 1200px) {
-    .men-shop {
+    .women-shop {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media screen and (max-width: 1026px) {
-    .men-shop {
+    .women-shop {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 785px) {
-    .men-shop {
+    .women-shop {
         grid-template-columns: repeat(2, 1fr);
     }
 }
