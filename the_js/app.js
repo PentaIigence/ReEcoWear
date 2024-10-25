@@ -184,6 +184,7 @@ const reapplyCartListeners = () => {
 
 document.addEventListener('DOMContentLoaded', displayWomenProducts);
 
+
 // Update product quantity in the cart
 listCartHTML.addEventListener('click', (event) => {
   let positionClick = event.target;
