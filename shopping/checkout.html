@@ -39,7 +39,7 @@
             </div>
           
             <div class="sign">
-              <a class="sign-up-btn" href="login.html"> Sign In </a>
+              <a class="sign-up-btn" href="../login.html"> Sign In </a>
             </div>
         </header>
 
@@ -52,14 +52,23 @@
                 <div class="text-price">
                     <p>Your total is: R<span id="total-amount">0.00</span></p>
                 </div>
-                
-                <div class="btn-check">
-                    <button id="checkout-btn">Proceed to Payment</button>
+
+                <div class="btn-view">
+                  <button class="payment-btn">Proceed to Payment</button>
                 </div>
+                
             </div>
         </div>
 
         <script src="../the_js/app.js"></script>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+              const totalAmountElement = document.getElementById("total-amount");
+              const totalPrice = localStorage.getItem("totalPrice") || "0.00";
+              totalAmountElement.textContent = totalPrice; // Display the saved total price
+          });
+        </script>
 
 </body>
 </html>

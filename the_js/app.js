@@ -85,53 +85,55 @@ const addCartToMemory = () => {
   localStorage.setItem(`${currentPage}_cart`, JSON.stringify(carts)); // Store based on men/women page
 }
 
-// Display the cart in HTML
+// Function to calculate and store the total price in localStorage
+const calculateTotalPrice = () => {
+  let totalPrice = carts.reduce((acc, cart) => {
+      let product = listProducts.find(p => p.id == cart.product_id);
+      if (product) {
+          return acc + product.price * cart.quantity;
+      }
+      return acc;
+  }, 0);
+  localStorage.setItem("totalPrice", totalPrice.toFixed(2)); // Store as a string with two decimal places
+};
+
+// Modify addCartToHTML to call calculateTotalPrice after updating cart HTML
 const addCartToHTML = () => {
   listCartHTML.innerHTML = '';
   let totalQuantity = 0;
-  
+
   if (carts.length > 0) {
-    carts.forEach(cart => {
-      totalQuantity = totalQuantity + cart.quantity;
+      carts.forEach(cart => {
+          totalQuantity += cart.quantity;
+          let positionProduct = listProducts.findIndex(value => value.id == parseInt(cart.product_id));
 
-      // Find the product in listProducts based on product_id
-      let positionProduct = listProducts.findIndex((value) => value.id == parseInt(cart.product_id));
+          if (positionProduct >= 0) {
+              let info = listProducts[positionProduct];
+              let newCart = document.createElement('div');
+              newCart.classList.add('item');
+              newCart.dataset.id = cart.product_id;
+              let totalPrice = (info.price * cart.quantity).toFixed(2);
 
-      if (positionProduct >= 0) {  // Ensure the product exists
-        let info = listProducts[positionProduct];
-
-        let newCart = document.createElement('div');
-        newCart.classList.add('item');
-        newCart.dataset.id = cart.product_id;
-
-        let totalPrice = (info.price * cart.quantity).toFixed(2);
-
-        // Update the cart HTML with product details
-        newCart.innerHTML = `
-          <div class="image">
-            <img src="${info.image}" alt="">
-          </div>
-          <div class="name">
-            ${info.name}
-          </div>
-          <div class="totalPrice">
-            R${totalPrice}
-          </div>
-          <div class="quantity">
-            <span class="minus"><</span>
-            <span>${cart.quantity}</span>
-            <span class="plus">></span>
-          </div>`;
-          
-        listCartHTML.appendChild(newCart);
-      } else {
-        console.error(`Product with ID ${cart.product_id} not found in listProducts.`);
-      }
-    });
+              newCart.innerHTML = `
+                  <div class="image">
+                      <img src="${info.image}" alt="">
+                  </div>
+                  <div class="name">${info.name}</div>
+                  <div class="totalPrice">R${totalPrice}</div>
+                  <div class="quantity">
+                      <span class="minus"><</span>
+                      <span>${cart.quantity}</span>
+                      <span class="plus">></span>
+                  </div>`;
+              
+              listCartHTML.appendChild(newCart);
+          }
+      });
   }
-  
+
   iconCartSpan.innerText = totalQuantity;
-}
+  calculateTotalPrice(); // Call to update total price in localStorage
+};
 
 function displayWomenProducts() {
   fetch('../women-product.json')
@@ -180,9 +182,7 @@ const reapplyCartListeners = () => {
   addCartToMemory();
 }
 
-
 document.addEventListener('DOMContentLoaded', displayWomenProducts);
-
 
 // Update product quantity in the cart
 listCartHTML.addEventListener('click', (event) => {

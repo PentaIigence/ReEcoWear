@@ -291,14 +291,14 @@ header .icon-cart .cart-counter {
     display: block;
     width: 100%;
     margin-bottom: 30px;
-}
+} 
 
-.btn-check {
+.btn-view {
     display: block;
     width: 100%;
 }
 
-.btn-check .checkout-btn {
+.btn-view .payment-btn {
     padding: 10px;
     font-size: 17px;
     background-color: green;
