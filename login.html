@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reecowear Store</title>
     <link rel="icon" href="Images/R.jpg">
-    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/new.css">
+    <script type="module" src="firebaseauth.js"></script>
 </head>
 
 <body>
@@ -17,6 +18,7 @@
         </header>
 
         <div class="form-div">
+        <div id="SignInMessage" class="messageDiv" style="display:none;"></div>
             
             <h2 class="h1-text">Login</h2>
 
@@ -32,8 +34,8 @@
             <br>
 
             <div class="log-pos">
-                <a class="log" href="index.html">Login</a>
-            
+                <button type="button" id= "submit" onclick="alert('Logging in!')">Login!</button>
+
                 <a class="signup" href="signup.html">Don't have an account?</a>
             </div>
             
