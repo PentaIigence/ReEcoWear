@@ -2,44 +2,44 @@
 
 Re-Eco Wear is a sustainable fashion e-commerce website built using HTML, CSS, and JavaScript. The platform is designed to showcase eco-friendly clothing products with a clean, responsive, and user-friendly shopping experience.
 
-🚀**Tech Stack**
+**Tech Stack**
 
 HTML5 </br> CSS3 </br> JavaScript (Vanilla JS)
 
-🛍️ **Features** </br>🧾 Product listing interface </br>🖼️ Clean product card layouts</br>
+**Features** </br>🧾 Product listing interface </br>🖼️ Clean product card layouts</br>
 📱 Fully responsive design (mobile & desktop)</br>
 🧭 Smooth navigation system</br>
 🛒 Basic e-commerce structure (UI-focused)</br>
 🎨 Styled for a modern sustainable fashion brand</br>
 
-#🌱 Project Purpose</br>
+**Project Purpose**</br>
 Re-Eco Wear was created to demonstrate front-end development skills by building a functional e-commerce interface. The focus of the project is on:</br>
 - Clean UI/UX design</br>
 - Responsive web design principles</br>
 - JavaScript interactivity</br>
 - Structuring a real-world e-commerce layout
 
-#💡 What I Learned
-Building responsive layouts using CSS
-DOM manipulation with JavaScript
-Structuring multi-page web applications
-Designing user-focused interfaces
-Creating consistent brand styling
+**What I Learned** </br>
+- Building responsive layouts using CSS </br>
+- DOM manipulation with JavaScript </br>
+- Structuring multi-page web applications </br>
+- Designing user-focused interfaces </br>
+- Creating consistent brand styling </br>
 
-#📸 Preview
+**Preview**
 (To Be inserted)
 
-#📬 Future Improvements
+**Future Improvements**
 Add shopping cart functionality
 Implement user authentication
 Connect to a backend (Node.js / Supabase / Firebase)
 Add payment gateway integration
 Improve product filtering and search
 
-🔗 Live Demo
-# https://reecowearclothing.netlify.app
+🔗 **Live Demo**
+- https://reecowearclothing.netlify.app
 
-#👨‍💻 Built With
-HTML
-CSS
+**Built With**
+HTML </br>
+CSS****
 JavaScript
