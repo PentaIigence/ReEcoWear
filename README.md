@@ -6,18 +6,18 @@ Re-Eco Wear is a sustainable fashion e-commerce website built using HTML, CSS, a
 
 HTML5 </br> CSS3 </br> JavaScript (Vanilla JS)
 
-🛍️ **Features** </br>🧾 Product listing interface </br>🖼️ Clean product card layouts
-📱 Fully responsive design (mobile & desktop)
-🧭 Smooth navigation system
-🛒 Basic e-commerce structure (UI-focused)
-🎨 Styled for a modern sustainable fashion brand
+🛍️ **Features** </br>🧾 Product listing interface </br>🖼️ Clean product card layouts</br>
+📱 Fully responsive design (mobile & desktop)</br>
+🧭 Smooth navigation system</br>
+🛒 Basic e-commerce structure (UI-focused)</br>
+🎨 Styled for a modern sustainable fashion brand</br>
 
-#🌱 Project Purpose
-Re-Eco Wear was created to demonstrate front-end development skills by building a functional e-commerce interface. The focus of the project is on:
-Clean UI/UX design
-Responsive web design principles
-JavaScript interactivity
-Structuring a real-world e-commerce layout
+#🌱 Project Purpose</br>
+Re-Eco Wear was created to demonstrate front-end development skills by building a functional e-commerce interface. The focus of the project is on:</br>
+- Clean UI/UX design</br>
+- Responsive web design principles</br>
+- JavaScript interactivity</br>
+- Structuring a real-world e-commerce layout
 
 #💡 What I Learned
 Building responsive layouts using CSS
