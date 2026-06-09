@@ -39,7 +39,7 @@ Improve product filtering and search
 🔗 **Live Demo**
 - https://reecowearclothing.netlify.app
 
-**Built With**
-HTML </br>
+**Built With** </br> 
+- HTML </br> - CSS </br> - Javascript
 CSS****
-JavaScript
+JavaScri
